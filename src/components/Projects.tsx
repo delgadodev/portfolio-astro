@@ -5,15 +5,16 @@ const Projects = () => {
   const projects = [
     {
       title: "Ecommerce NextJS",
-      description: "Ecommerce made with NextJS and Chakra UI",
+      description:
+        "E-commerce developed with Next.js and Chakra UI with basic and scalable features.",
       image: "projects/ecommerce.png",
       github: "https://github.com/xhungen/ecommerce-nextjs",
       link: "https://ecommerce-nextjs-xhungen.vercel.app/",
     },
     {
-      title: "Taxes Calculator",
+      title: "Tax Calculator",
       description:
-        "Taxes Calculator for Argentina purchases with Credit Card made with React & Chakra UI",
+        "Tax calculator for purchases made in dollars with credit cards for citizens of Argentina.",
       image: "projects/calculadora.png",
       github: "https://github.com/xhungen/calculadora-impuestos",
       link: "https://calculadora-impuestos.vercel.app/",
@@ -28,26 +29,31 @@ const Projects = () => {
 
       <div className="mt-10 grid gap-5 md:grid-cols-2 ">
         {projects.map((project) => (
-          <div className="bg-white/10 w-[350px] rounded-xl relative mx-auto">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="h-[320px] w-full object-cover rounded-t-xl"
-            />
-
-            <div className="p-5">
-              <p className="font-bold font-Inter">{project.title}</p>
-              <p className="font-Oxygen text-sm">{project.description}</p>
-            </div>
-
-            <div className="p-5 flex gap-5 items-center">
-              <a href={project.github} target="_blank">
-                <img src={githubIcon} alt="github icon" />
-              </a>
-
-              <a href={project.link} target="_blank">
-                <img src={linkIcon} alt="link icon" />
-              </a>
+          <div
+            key={project.title}
+            className="bg-white/10 w-[100%] h-[520px] rounded-xl relative mx-auto hover:scale-105 transition-transform duration-200"
+          >
+            <div
+              className="w-[100%] h-[60%] rounded-t-xl"
+              style={{
+                backgroundImage: `url(${project.image})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+            <div className="p-5 h-[40%]">
+              <p className="font-Inter font-extrabold text-lg">
+                {project.title}
+              </p>
+              <p className="font-Oxygen">{project.description}</p>
+              <div className="flex mt-5 gap-5">
+                <a href={project.github} target="_blank">
+                  <img src={githubIcon} alt="githubIcon" />
+                </a>
+                <a href={project.link} target="_blank">
+                  <img src={linkIcon} alt="linkIcon" />
+                </a>
+              </div>
             </div>
           </div>
         ))}

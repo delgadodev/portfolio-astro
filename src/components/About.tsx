@@ -47,10 +47,11 @@ const About = () => {
 
       <div>
         <p className="text-justify leading-6 font-Oxygen">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          quos dignissimos dicta provident corrupti exercitationem, ipsa
-          possimus pariatur temporibus maiores similique architecto quo, ratione
-          laudantium sed, consectetur in modi aperiam.
+          I'm a Frontend developer passionate about new technologies. I am
+          currently studying Computer Engineering but web development completely
+          captured my attention. That's why I dedicate myself to learn
+          everything I can about these technologies. I like to work in a group
+          and learn from it. I like challenges and new experiences.
         </p>
       </div>
 
@@ -61,7 +62,10 @@ const About = () => {
 
         <div className="flex justify-around gap-2 mt-5">
           {technologies.map((technology) => (
-            <div key={technology.name} className="flex flex-col items-center cursor-pointer hover:transform hover:scale-125 transition-transform duration-200">
+            <div
+              key={technology.name}
+              className="flex flex-col items-center cursor-pointer hover:transform hover:scale-125 transition-transform duration-200"
+            >
               <a
                 href={technology.link}
                 target="_blank"

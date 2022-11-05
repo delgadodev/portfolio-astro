@@ -6,11 +6,17 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 ---
 
-<Layout title="LautaroDev">
-  <main class="lg:max-w-4xl mx-auto w-11/12 text-white py-5 mt-10">
-    <Header />
-    <About />
-    <Projects />
-    <Contact />
+<Layout title="DelgadoDev">
+  <main class="text-white mt-10 flex flex-col items-center">
+    <div class="max-w-xs md:max-w-2xl lg:max-w-4xl">
+      <Header />
+      <About />
+      <Projects />
+      <Contact client:load/>
+
+      <p class="p-5 mt-5 text-center font-Oxygen">
+        Developed by @DelgadoDev - 2022
+      </p>
+    </div>
   </main>
 </Layout>
