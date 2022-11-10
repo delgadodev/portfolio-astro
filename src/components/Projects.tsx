@@ -23,7 +23,7 @@ const Projects = () => {
 
   return (
     <div className="mt-10">
-      <h2 className="font-extrabold text-xl  font-Inter text-center bg-gradient-to-r from-orange-500 to-pink-600 text-transparent bg-clip-text lg:text-2xl">
+      <h2 className="font-extrabold text-xl  font-Inter text-center bg-gradient-to-r from-violet-500 to-pink-600 text-transparent bg-clip-text lg:text-2xl">
         Projects
       </h2>
 

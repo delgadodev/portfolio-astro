@@ -41,7 +41,7 @@ const About = () => {
 
   return (
     <div className="mt-10 flex flex-col gap-5">
-      <h2 className="font-extrabold text-xl lg:text-2xl font-Inter bg-gradient-to-r from-orange-500 to-pink-600 text-transparent bg-clip-text">
+      <h2 className="font-extrabold text-xl lg:text-2xl font-Inter bg-gradient-to-r from-violet-500 to-pink-600 text-transparent bg-clip-text">
         About me
       </h2>
 
@@ -56,7 +56,7 @@ const About = () => {
       </div>
 
       <div className="mt-10">
-        <h2 className="font-extrabold text-xl lg:text-2xl  font-Inter bg-gradient-to-r from-orange-500 to-pink-600 text-transparent bg-clip-text">
+        <h2 className="font-extrabold text-xl lg:text-2xl  font-Inter bg-gradient-to-r from-violet-500 to-pink-600 text-transparent bg-clip-text">
           Technologies
         </h2>
 
