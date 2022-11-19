@@ -10,6 +10,7 @@ const Projects = () => {
       image: "projects/ecommerce.png",
       github: "https://github.com/xhungen/ecommerce-nextjs",
       link: "https://ecommerce-nextjs-xhungen.vercel.app/",
+      tech: ["Next.js", "Chakra UI"],
     },
     {
       title: "Tax Calculator",
@@ -18,6 +19,7 @@ const Projects = () => {
       image: "projects/calculadora.png",
       github: "https://github.com/xhungen/calculadora-impuestos",
       link: "https://calculadora-impuestos.vercel.app/",
+      tech: ["Next.js", "Chakra UI", "REST API"],
     },
   ];
 
@@ -31,10 +33,10 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="bg-white/10 w-[100%] h-[520px] rounded-xl relative mx-auto hover:scale-105 transition-transform duration-200"
+            className="bg-white/10 w-[100%] h-[520px] rounded-xl relative mx-auto"
           >
             <div
-              className="w-[100%] h-[60%] rounded-t-xl"
+              className="w-[100%] h-[60%] rounded-t-xl "
               style={{
                 backgroundImage: `url(${project.image})`,
                 backgroundSize: "cover",
@@ -46,11 +48,28 @@ const Projects = () => {
                 {project.title}
               </p>
               <p className="font-Oxygen">{project.description}</p>
+
               <div className="flex mt-5 gap-5">
-                <a href={project.github} target="_blank">
+                {project.tech.map((tech) => (
+                  <p className="border rounded-full px-2  font-Oxygen text-sm">
+                    {tech}
+                  </p>
+                ))}
+              </div>
+
+              <div className="flex mt-5 gap-5">
+                <a
+                  className="hover:scale-110 transition duration-500 ease-in-out"
+                  href={project.github}
+                  target="_blank"
+                >
                   <img src={githubIcon} alt="githubIcon" />
                 </a>
-                <a href={project.link} target="_blank">
+                <a
+                  className="hover:scale-110 transition duration-500 ease-in-out"
+                  href={project.link}
+                  target="_blank"
+                >
                   <img src={linkIcon} alt="linkIcon" />
                 </a>
               </div>
