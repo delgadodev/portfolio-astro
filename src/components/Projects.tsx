@@ -36,14 +36,14 @@ const Projects = () => {
             className="bg-white/10 w-[100%] h-[520px] rounded-xl relative mx-auto"
           >
             <div
-              className="w-[100%] h-[60%] rounded-t-xl "
+              className="w-[100%] h-[55%] rounded-t-xl "
               style={{
                 backgroundImage: `url(${project.image})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
               }}
             ></div>
-            <div className="p-5 h-[40%]">
+            <div className="p-5 h-[45%]">
               <p className="font-Inter font-extrabold text-lg">
                 {project.title}
               </p>
